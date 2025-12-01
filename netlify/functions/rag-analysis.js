@@ -1,33 +1,52 @@
 // File: netlify/functions/rag-analysis.js
-// ==========================================
-// 1. IMPORTS
-// ==========================================
-const { GoogleGenAI } = require("@google/genai");
-const ai = new GoogleGenAI({});
+// Đọc JSON tự động + xử lý AI
+
 const fs = require("fs");
 const path = require("path");
+const { GoogleGenAI } = require("@google/genai");
 
-// ==========================================
-// 2. LOAD JSON DATA (Netlify-compatible)
-// ==========================================
+// Lấy API Key từ Netlify
+const ai = new GoogleGenAI({
+  apiKey: process.env.GEMINI_API_KEY,
+});
 
-const jsonPath = path.resolve("data.json");
+// Hàm load data.json
+function loadBusinessData() {
+  try {
+    const filePath = path.join(__dirname, "data.json");
+    const raw = fs.readFileSync(filePath, "utf8");
+    const rows = JSON.parse(raw);
 
-// Đọc JSON static (được commit lên GitHub, Netlify đọc được)
-let records = [];
+    // Convert JSON → text cho Gemini
+    let text = "[START BUSINESS DATA LOGS]\n";
+    text += "## AUTO-GENERATED MARKETING LOGS ##\n\n";
 
-try {
-  const raw = fs.readFileSync(jsonPath, "utf8");
-  records = JSON.parse(raw);
-} catch (err) {
-  console.error("Lỗi đọc data.json:", err);
-  records = []; // fallback
+    rows.forEach((item, idx) => {
+      text += `- Email #${idx + 1}\n`;
+      text += `  - Subject: "${item["Subject"]}"\n`;
+      text += `  - Responsible: ${item["Responsible"]}\n`;
+      text += `  - Sent: ${item["Sent"]}\n`;
+      text += `  - Received Ratio: ${item["Received Ratio"]}%\n`;
+      text += `  - Opened Ratio: ${item["Opened Ratio"]}%\n`;
+      text += `  - Click Ratio: ${item["Number of Clicks"]}%\n`;
+      text += `  - Replied Ratio: ${item["Replied Ratio"]}%\n`;
+      text += `  - Status: ${item["Status"]}\n\n`;
+    });
+
+    text += "[END BUSINESS DATA LOGS]\n";
+
+    return text;
+  } catch (err) {
+    console.error("Lỗi đọc data.json:", err);
+    return "[START BUSINESS DATA LOGS]\n(No data loaded)\n[END BUSINESS DATA LOGS]";
+  }
 }
-// ==========================================
-// 3. NETLIFY HANDLER
-// ==========================================
+
+// Load data.json mỗi lần function được gọi
+const BUSINESS_DATA = loadBusinessData();
+
 exports.handler = async (event) => {
-  // CORS preflight
+  // CORS
   if (event.httpMethod === "OPTIONS") {
     return {
       statusCode: 204,
@@ -35,7 +54,6 @@ exports.handler = async (event) => {
         "Access-Control-Allow-Origin": "*",
         "Access-Control-Allow-Methods": "POST, GET, OPTIONS",
         "Access-Control-Allow-Headers": "Content-Type",
-        "Access-Control-Max-Age": "86400",
       },
       body: "",
     };
@@ -46,26 +64,22 @@ exports.handler = async (event) => {
   }
 
   try {
-    const { user_query } = JSON.parse(event.body);
+    const { user_query } = JSON.parse(event.body || "{}");
 
-    // SYSTEM PROMPT
     const system_prompt = `
-You are a Senior Business Analyst.
-Analyze provided business logs (auto-generated from Mass Mailing Excel data).
-Provide strategic insights, trends, anomalies, and recommendations.
-Base your answer ONLY on the dataset.
-`.trim();
+You are a Senior Business Analyst. You analyze marketing email logs and extract insights. 
+Use only the provided data. Provide trends, root-cause analysis, and actionable suggestions.
+    `.trim();
 
-    const full_prompt = `${system_prompt}\n\n${BUSINESS_DATA}\n\nQuestion: ${user_query}`;
+    const full_prompt = `${system_prompt}\n\n${BUSINESS_DATA}\n\nUser Question: ${user_query}`;
 
-    // CALL GEMINI
     const response = await ai.models.generateContent({
       model: "gemini-2.5-flash",
       contents: full_prompt,
       config: { temperature: 0.2 },
     });
 
-    const bot_answer = response.text.trim();
+    const bot_answer = response.text().trim();
 
     return {
       statusCode: 200,
@@ -82,10 +96,9 @@ Base your answer ONLY on the dataset.
       statusCode: 500,
       headers: {
         "Access-Control-Allow-Origin": "*",
+        "Content-Type": "application/json",
       },
-      body: JSON.stringify({
-        error: "AI Internal Error. Check GEMINI_API_KEY or file structure.",
-      }),
+      body: JSON.stringify({ error: "Gemini API Error" }),
     };
   }
 };
