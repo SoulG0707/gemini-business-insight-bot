@@ -1,1 +1,0 @@
-# gemini-business-insight-bot
