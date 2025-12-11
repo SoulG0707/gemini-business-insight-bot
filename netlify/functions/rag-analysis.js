@@ -10,40 +10,128 @@ const ai = new GoogleGenAI({
   apiKey: process.env.GEMINI_API_KEY,
 });
 
-// Hàm load data.json
-function loadBusinessData() {
+function excelSerialToISO(serial) {
+  if (typeof serial !== "number") return null;
+
+  const excelEpoch = Date.UTC(1899, 11, 30);
+  const utc = excelEpoch + serial * 24 * 60 * 60 * 1000;
+  const date = new Date(utc);
+
+  if (Number.isNaN(date.getTime())) return null;
+
+  return date.toISOString().split("T")[0];
+}
+
+function formatValueByKey(key, value) {
+  const lowerKey = key.toLowerCase();
+
+  if (
+    typeof value === "number" &&
+    (lowerKey.includes("date") || lowerKey.includes("deadline"))
+  ) {
+    const iso = excelSerialToISO(value);
+    if (iso) {
+      return `${iso} (serial: ${value})`;
+    }
+  }
+
+  return value === undefined || value === null || value === "" ? "N/A" : value;
+}
+
+function loadJsonFile(fileName) {
+  const filePath = path.join(__dirname, fileName);
+
   try {
-    const filePath = path.join(__dirname, "data.json");
     const raw = fs.readFileSync(filePath, "utf8");
-    const rows = JSON.parse(raw);
-
-    // Convert JSON → text cho Gemini
-    let text = "[START BUSINESS DATA LOGS]\n";
-    text += "## AUTO-GENERATED MARKETING LOGS ##\n\n";
-
-    rows.forEach((item, idx) => {
-      text += `- Email #${idx + 1}\n`;
-      text += `  - Subject: "${item["Subject"]}"\n`;
-      text += `  - Responsible: ${item["Responsible"]}\n`;
-      text += `  - Sent: ${item["Sent"]}\n`;
-      text += `  - Received Ratio: ${item["Received Ratio"]}%\n`;
-      text += `  - Opened Ratio: ${item["Opened Ratio"]}%\n`;
-      text += `  - Click Ratio: ${item["Number of Clicks"]}%\n`;
-      text += `  - Replied Ratio: ${item["Replied Ratio"]}%\n`;
-      text += `  - Status: ${item["Status"]}\n\n`;
-    });
-
-    text += "[END BUSINESS DATA LOGS]\n";
-
-    return text;
+    return JSON.parse(raw);
   } catch (err) {
-    console.error("Lỗi đọc data.json:", err);
-    return "[START BUSINESS DATA LOGS]\n(No data loaded)\n[END BUSINESS DATA LOGS]";
+    console.error(`Lỗi đọc ${fileName}:`, err);
+    return [];
   }
 }
 
-// Load data.json mỗi lần function được gọi
-const BUSINESS_DATA = loadBusinessData();
+function formatMarketingLogs(rows) {
+  if (!Array.isArray(rows) || rows.length === 0) {
+    return "## MARKETING EMAIL LOGS ##\nNo marketing logs loaded.\n\n";
+  }
+
+  let text = "## MARKETING EMAIL LOGS ##\n\n";
+
+  rows.forEach((item, idx) => {
+    text += `- Email #${idx + 1}\n`;
+    text += `  - Subject: "${item["Subject"]}"\n`;
+    text += `  - Responsible: ${item["Responsible"]}\n`;
+    text += `  - Sent: ${item["Sent"]}\n`;
+    text += `  - Received Ratio: ${item["Received Ratio"]}%\n`;
+    text += `  - Opened Ratio: ${item["Opened Ratio"]}%\n`;
+    text += `  - Click Ratio: ${item["Number of Clicks"]}%\n`;
+    text += `  - Replied Ratio: ${item["Replied Ratio"]}%\n`;
+    text += `  - Status: ${item["Status"]}\n\n`;
+  });
+
+  return text;
+}
+
+function formatPurchaseOrders(rows) {
+  if (!Array.isArray(rows) || rows.length === 0) {
+    return "## PURCHASE ORDERS ##\nNo purchase order data loaded.\n\n";
+  }
+
+  let text = "## PURCHASE ORDERS ##\n\n";
+
+  rows.forEach((item, idx) => {
+    text += `- Purchase Order #${idx + 1}\n`;
+    text += `  - Reference: ${formatValueByKey("Order Reference", item["Order Reference"])}\n`;
+    text += `  - Priority: ${formatValueByKey("Priority", item["Priority"])}\n`;
+    text += `  - Vendor: ${formatValueByKey("Vendor", item["Vendor"])}\n`;
+    text += `  - Buyer: ${formatValueByKey("Buyer", item["Buyer"])}\n`;
+    text += `  - Order Deadline: ${formatValueByKey("Order Deadline", item["Order Deadline"])}\n`;
+    text += `  - Activities: ${formatValueByKey("Activities", item["Activities"])}\n`;
+    text += `  - Source Document: ${formatValueByKey("Source Document", item["Source Document"])}\n`;
+    text += `  - Total: ${formatValueByKey("Total", item["Total"])}\n`;
+    text += `  - Status: ${formatValueByKey("Status", item["Status"])}\n\n`;
+  });
+
+  return text;
+}
+
+function formatSalesOrders(rows) {
+  if (!Array.isArray(rows) || rows.length === 0) {
+    return "## SALES ORDERS ##\nNo sales order data loaded.\n\n";
+  }
+
+  let text = "## SALES ORDERS ##\n\n";
+
+  rows.forEach((item, idx) => {
+    text += `- Sales Order #${idx + 1}\n`;
+    text += `  - Reference: ${formatValueByKey("Order Reference", item["Order Reference"])}\n`;
+    text += `  - Creation Date: ${formatValueByKey("Creation Date", item["Creation Date"])}\n`;
+    text += `  - Customer: ${formatValueByKey("Customer", item["Customer"])}\n`;
+    text += `  - Salesperson: ${formatValueByKey("Salesperson", item["Salesperson"])}\n`;
+    text += `  - Activities: ${formatValueByKey("Activities", item["Activities"])}\n`;
+    text += `  - Total: ${formatValueByKey("Total", item["Total"])}\n`;
+    text += `  - Status: ${formatValueByKey("Status", item["Status"])}\n\n`;
+  });
+
+  return text;
+}
+
+function buildKnowledgeBase() {
+  const marketingLogs = loadJsonFile("data.json");
+  const purchaseOrders = loadJsonFile("purchase_orders.json");
+  const salesOrders = loadJsonFile("sales_orders.json");
+
+  let text = "[START BUSINESS DATA]\n";
+  text += formatMarketingLogs(marketingLogs);
+  text += formatPurchaseOrders(purchaseOrders);
+  text += formatSalesOrders(salesOrders);
+  text += "[END BUSINESS DATA]\n";
+
+  return text;
+}
+
+// Load data files mỗi lần function được gọi
+const BUSINESS_DATA = buildKnowledgeBase();
 
 exports.handler = async (event) => {
   // CORS
@@ -67,8 +155,8 @@ exports.handler = async (event) => {
     const { user_query } = JSON.parse(event.body || "{}");
 
     const system_prompt = `
-You are a Senior Business Analyst. You analyze marketing email logs and extract insights. 
-Use only the provided data. Provide trends, root-cause analysis, and actionable suggestions.
+You are a Senior Business Analyst. You analyze marketing emails, purchase orders, and sales orders to extract insights.
+Use only the provided data. Provide trends, root-cause analysis, and actionable suggestions grounded in the dataset.
     `.trim();
 
     const full_prompt = `${system_prompt}\n\n${BUSINESS_DATA}\n\nUser Question: ${user_query}`;
