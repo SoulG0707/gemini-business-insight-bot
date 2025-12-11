@@ -167,7 +167,7 @@ Use only the provided data. Provide trends, root-cause analysis, and actionable 
       config: { temperature: 0.2 },
     });
 
-    const bot_answer = response.text().trim();
+    const bot_answer = response.output_text || "";
 
     return {
       statusCode: 200,
