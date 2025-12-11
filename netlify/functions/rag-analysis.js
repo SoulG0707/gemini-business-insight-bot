@@ -133,6 +133,38 @@ function buildKnowledgeBase() {
 // Load data files mỗi lần function được gọi
 const BUSINESS_DATA = buildKnowledgeBase();
 
+async function generateWithRetry(full_prompt) {
+  const maxAttempts = 3;
+
+  for (let attempt = 1; attempt <= maxAttempts; attempt += 1) {
+    try {
+      return await ai.models.generateContent({
+        model: "gemini-2.5-flash",
+        contents: [
+          {
+            role: "user",
+            parts: [{ text: full_prompt }],
+          },
+        ],
+        config: { temperature: 0.2 },
+      });
+    } catch (err) {
+      const status = err?.status || err?.error?.status || err?.error?.code;
+      const isOverloaded = status === 503 || status === "UNAVAILABLE";
+
+      if (isOverloaded && attempt < maxAttempts) {
+        const backoffMs = attempt * 500;
+        await new Promise((resolve) => setTimeout(resolve, backoffMs));
+        continue;
+      }
+
+      throw err;
+    }
+  }
+
+  throw new Error("Gemini request failed");
+}
+
 exports.handler = async (event) => {
   // CORS
   if (event.httpMethod === "OPTIONS") {
@@ -162,16 +194,7 @@ Use only the provided data. Provide trends, root-cause analysis, and actionable 
 
     const full_prompt = `${system_prompt}\n\n${BUSINESS_DATA}\n\nUser Question: ${user_query}`;
 
-    const response = await ai.models.generateContent({
-      model: "gemini-2.5-flash",
-            contents: [
-        {
-          role: "user",
-          parts: [{ text: full_prompt }],
-        },
-      ],
-      config: { temperature: 0.2 },
-    });
+    const response = await generateWithRetry(full_prompt);
 
     const bot_answer = (response.text || "No AI answer returned.").trim();
 
@@ -186,13 +209,19 @@ Use only the provided data. Provide trends, root-cause analysis, and actionable 
   } catch (error) {
     console.error("Gemini Error:", error);
 
+    const status = error?.status || error?.error?.status || error?.error?.code;
+    const isOverloaded = status === 503 || status === "UNAVAILABLE";
+    const message = isOverloaded
+      ? "Gemini model is busy. Please try again in a moment."
+      : "Gemini API Error";
+
     return {
       statusCode: 500,
       headers: {
         "Access-Control-Allow-Origin": "*",
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ error: "Gemini API Error" }),
+      body: JSON.stringify({ error: message }),
     };
   }
 };
