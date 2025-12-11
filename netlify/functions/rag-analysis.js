@@ -142,6 +142,7 @@ exports.handler = async (event) => {
         "Access-Control-Allow-Origin": "*",
         "Access-Control-Allow-Methods": "POST, GET, OPTIONS",
         "Access-Control-Allow-Headers": "Content-Type",
+        "Access-Control-Max-Age": "86400"
       },
       body: "",
     };
@@ -163,11 +164,16 @@ Use only the provided data. Provide trends, root-cause analysis, and actionable 
 
     const response = await ai.models.generateContent({
       model: "gemini-2.5-flash",
-      contents: full_prompt,
+            contents: [
+        {
+          role: "user",
+          parts: [{ text: full_prompt }],
+        },
+      ],
       config: { temperature: 0.2 },
     });
 
-    const bot_answer = (response.output_text || "No AI answer returned.").trim();
+    const bot_answer = (response.text || "No AI answer returned.").trim();
 
     return {
       statusCode: 200,
