@@ -1,83 +1,1262 @@
 [
   {
+    "Order Reference": "S00146",
+    "Creation Date": "2025-12-13 09:26:46",
+    "Customer": "Lê Huỳnh Như",
+    "Salesperson": "Lương Thảo Nhi",
+    "Activities": null,
+    "Total": 107690000,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00145",
+    "Creation Date": "2025-12-13 09:24:27",
+    "Customer": "Tiểu Vy",
+    "Salesperson": "Lương Thảo Nhi",
+    "Activities": null,
+    "Total": 674300000,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00144",
+    "Creation Date": "2025-12-13 09:23:10",
+    "Customer": "Thanh Thuỷ",
+    "Salesperson": "Lương Thảo Nhi",
+    "Activities": null,
+    "Total": 250250000,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00143",
+    "Creation Date": "2025-12-13 09:18:37",
+    "Customer": "Trần Anh Thơ",
+    "Salesperson": "Lương Thảo Nhi",
+    "Activities": null,
+    "Total": 483406000,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00142",
+    "Creation Date": "2025-12-13 09:17:22",
+    "Customer": "Jun Ali",
+    "Salesperson": "Lương Thảo Nhi",
+    "Activities": null,
+    "Total": 400345000,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00141",
+    "Creation Date": "2025-12-13 09:14:15",
+    "Customer": "Huỳnh Văn Chương",
+    "Salesperson": "Yến Ngọc",
+    "Activities": null,
+    "Total": 97790000,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00140",
+    "Creation Date": "2025-12-12 21:26:50",
+    "Customer": "Ely",
+    "Salesperson": null,
+    "Activities": null,
+    "Total": 211530000,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00139",
+    "Creation Date": "2025-12-12 21:18:07",
+    "Customer": "Rina",
+    "Salesperson": null,
+    "Activities": null,
+    "Total": 176957000,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00138",
+    "Creation Date": "2025-12-12 21:16:24",
+    "Customer": "NyTran",
+    "Salesperson": null,
+    "Activities": null,
+    "Total": 96074000,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00137",
+    "Creation Date": "2025-12-12 21:14:01",
+    "Customer": "Anna",
+    "Salesperson": null,
+    "Activities": null,
+    "Total": 82005000,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00136",
+    "Creation Date": "2025-12-12 20:21:22",
+    "Customer": "Phạm Quỳnh Trang",
+    "Salesperson": "Nguyên Sa",
+    "Activities": null,
+    "Total": 20394000,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00135",
+    "Creation Date": "2025-12-12 20:20:10",
+    "Customer": "Nguyễn Minh Khôi",
+    "Salesperson": "Nguyên Sa",
+    "Activities": null,
+    "Total": 16871800,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00134",
+    "Creation Date": "2025-12-12 20:18:47",
+    "Customer": "Lê Anh Tuấn",
+    "Salesperson": "Nguyên Sa",
+    "Activities": null,
+    "Total": 16915800,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00133",
+    "Creation Date": "2025-12-12 20:15:59",
+    "Customer": "Trần Thanh Huyền",
+    "Salesperson": "Nguyên Sa",
+    "Activities": null,
+    "Total": 13043800,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00132",
+    "Creation Date": "2025-12-12 20:14:50",
+    "Customer": "Bùi Thanh Tùng",
+    "Salesperson": "Nguyên Sa",
+    "Activities": null,
+    "Total": 17600000,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00131",
+    "Creation Date": "2025-12-12 20:13:52",
+    "Customer": "Phạm Quỳnh Trang",
+    "Salesperson": "Nguyên Sa",
+    "Activities": null,
+    "Total": 11557700,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00130",
+    "Creation Date": "2025-12-12 20:12:56",
+    "Customer": "Nguyễn Hồng Ánh",
+    "Salesperson": "Nguyên Sa",
+    "Activities": null,
+    "Total": 17879400,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00129",
+    "Creation Date": "2025-12-11 23:06:49",
+    "Customer": "Lê Anh Tuấn",
+    "Salesperson": "Nguyên Sa",
+    "Activities": null,
+    "Total": 10723900,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00128",
+    "Creation Date": "2025-12-11 23:03:43",
+    "Customer": "Nguyễn Minh Khôi",
+    "Salesperson": "Nguyên Sa",
+    "Activities": null,
+    "Total": 8580000,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00127",
+    "Creation Date": "2025-12-11 23:02:49",
+    "Customer": "Phạm Quỳnh Trang",
+    "Salesperson": "Nguyên Sa",
+    "Activities": null,
+    "Total": 8707600,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00126",
+    "Creation Date": "2025-12-11 23:01:38",
+    "Customer": "Phạm Quốc Bảo",
+    "Salesperson": "Nguyên Sa",
+    "Activities": null,
+    "Total": 4782800,
+    "Status": "Sales Order"
+  },
+  {
     "Order Reference": "S00125",
-    "Creation Date": 46002.46722222222,
+    "Creation Date": "2025-12-11 11:12:48",
     "Customer": "novaha",
     "Salesperson": "Yến Ngọc",
-    "Activities": "",
+    "Activities": null,
     "Total": 203225000,
     "Status": "Sales Order"
   },
   {
+    "Order Reference": "S00124",
+    "Creation Date": "2025-12-11 10:43:57",
+    "Customer": "nguyen",
+    "Salesperson": null,
+    "Activities": null,
+    "Total": 7425000,
+    "Status": "Sales Order"
+  },
+  {
     "Order Reference": "S00123",
-    "Creation Date": 46002.44488425926,
+    "Creation Date": "2025-12-11 10:40:38",
     "Customer": "Lê Văn Đạt",
     "Salesperson": "Yến Ngọc",
-    "Activities": "",
+    "Activities": null,
     "Total": 3491400,
     "Status": "Sales Order"
   },
   {
     "Order Reference": "S00122",
-    "Creation Date": 46002.44341435185,
+    "Creation Date": "2025-12-11 10:38:31",
     "Customer": "Thảo Nguyên",
     "Salesperson": "Yến Ngọc",
-    "Activities": "",
+    "Activities": null,
     "Total": 9735000,
     "Status": "Sales Order"
   },
   {
+    "Order Reference": "S00121",
+    "Creation Date": "2025-12-11 10:34:40",
+    "Customer": "Lâm Thành Đạt",
+    "Salesperson": "Lương Thảo Nhi",
+    "Activities": null,
+    "Total": 306625000,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00120",
+    "Creation Date": "2025-12-11 10:08:03",
+    "Customer": "Lê Huỳnh Như",
+    "Salesperson": "Lương Thảo Nhi",
+    "Activities": null,
+    "Total": 433631000,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00119",
+    "Creation Date": "2025-12-11 10:05:07",
+    "Customer": "Trần Anh Thơ",
+    "Salesperson": "Lương Thảo Nhi",
+    "Activities": null,
+    "Total": 362120000,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00118",
+    "Creation Date": "2025-12-10 23:51:50",
+    "Customer": "Trần Thanh Huyền",
+    "Salesperson": "Nguyên Sa",
+    "Activities": null,
+    "Total": 28479000,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00117",
+    "Creation Date": "2025-12-10 23:51:22",
+    "Customer": "Phan Nhật Long",
+    "Salesperson": "Nguyên Sa",
+    "Activities": null,
+    "Total": 89100000,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00116",
+    "Creation Date": "2025-12-10 23:47:53",
+    "Customer": "Lâm Minh Quốc",
+    "Salesperson": "Nguyên Sa",
+    "Activities": null,
+    "Total": 17932200,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00115",
+    "Creation Date": "2025-12-10 21:40:47",
+    "Customer": "Lyly",
+    "Salesperson": null,
+    "Activities": null,
+    "Total": 7031200,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00114",
+    "Creation Date": "2025-12-10 21:33:45",
+    "Customer": "Lien",
+    "Salesperson": null,
+    "Activities": null,
+    "Total": 4331800,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00113",
+    "Creation Date": "2025-12-09 19:36:09",
+    "Customer": "Nguyễn Hồng Ánh",
+    "Salesperson": "Nguyên Sa",
+    "Activities": null,
+    "Total": 56540000,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00112",
+    "Creation Date": "2025-12-09 19:35:27",
+    "Customer": "Phạm Quốc Bảo",
+    "Salesperson": "Nguyên Sa",
+    "Activities": null,
+    "Total": 86790000,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00111",
+    "Creation Date": "2025-12-09 19:34:59",
+    "Customer": "Trần Thanh Huyền",
+    "Salesperson": "Nguyên Sa",
+    "Activities": null,
+    "Total": 33715000,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00110",
+    "Creation Date": "2025-12-09 15:17:53",
+    "Customer": "Phạm Quỳnh Trang",
+    "Salesperson": "Nguyên Sa",
+    "Activities": null,
+    "Total": 9205900,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00109",
+    "Creation Date": "2025-12-09 11:53:08",
+    "Customer": "alexander",
+    "Salesperson": null,
+    "Activities": null,
+    "Total": 28105000,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00107",
+    "Creation Date": "2025-12-08 00:37:59",
+    "Customer": "Nguyên Sa",
+    "Salesperson": null,
+    "Activities": null,
+    "Total": 9623900,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00108",
+    "Creation Date": "2025-12-08 02:04:43",
+    "Customer": "Nguyễn Hồng Ánh",
+    "Salesperson": "Nguyên Sa",
+    "Activities": null,
+    "Total": 6068701,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00106",
+    "Creation Date": "2025-12-07 21:03:49",
+    "Customer": "Lê Anh Tuấn",
+    "Salesperson": "Nguyên Sa",
+    "Activities": null,
+    "Total": 51040000,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00105",
+    "Creation Date": "2025-12-07 21:01:14",
+    "Customer": "Nguyễn Minh Khôi",
+    "Salesperson": "Nguyên Sa",
+    "Activities": null,
+    "Total": 50325000,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00104",
+    "Creation Date": "2025-12-07 21:00:23",
+    "Customer": "Phạm Quốc Bảo",
+    "Salesperson": "Nguyên Sa",
+    "Activities": null,
+    "Total": 79640000,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00103",
+    "Creation Date": "2025-12-06 23:15:48",
+    "Customer": "Phan Nhật Long",
+    "Salesperson": "Nguyên Sa",
+    "Activities": null,
+    "Total": 55557700,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00102",
+    "Creation Date": "2025-12-06 23:15:13",
+    "Customer": "Trần Thanh Huyền",
+    "Salesperson": "Nguyên Sa",
+    "Activities": null,
+    "Total": 39930000,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00101",
+    "Creation Date": "2025-12-06 23:14:15",
+    "Customer": "Phạm Quốc Bảo",
+    "Salesperson": "Nguyên Sa",
+    "Activities": null,
+    "Total": 74569000,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00100",
+    "Creation Date": "2025-12-06 12:53:26",
+    "Customer": "Yến Nhi Trần",
+    "Salesperson": "Lương Thảo Nhi",
+    "Activities": null,
+    "Total": 8734000,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00099",
+    "Creation Date": "2025-12-06 12:38:50",
+    "Customer": "Nhật Vy",
+    "Salesperson": "Lương Thảo Nhi",
+    "Activities": null,
+    "Total": 2231900,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00098",
+    "Creation Date": "2025-12-06 12:33:01",
+    "Customer": "Lương Thảo Nhi",
+    "Salesperson": null,
+    "Activities": null,
+    "Total": 3080000,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00097",
+    "Creation Date": "2025-12-05 21:24:36",
+    "Customer": "Tina",
+    "Salesperson": null,
+    "Activities": null,
+    "Total": 13286900,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00096",
+    "Creation Date": "2025-12-04 21:16:16",
+    "Customer": "Hữu Đăng",
+    "Salesperson": "Lương Thảo Nhi",
+    "Activities": null,
+    "Total": 2189000,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00095",
+    "Creation Date": "2025-12-04 21:14:16",
+    "Customer": "Jun Ali",
+    "Salesperson": "Lương Thảo Nhi",
+    "Activities": null,
+    "Total": 3932500,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00094",
+    "Creation Date": "2025-12-04 21:11:33",
+    "Customer": "Lương Thảo Nhi",
+    "Salesperson": null,
+    "Activities": null,
+    "Total": 27231600,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00093",
+    "Creation Date": "2025-12-03 21:40:40",
+    "Customer": "Hữu Huy",
+    "Salesperson": "Lương Thảo Nhi",
+    "Activities": null,
+    "Total": 3190000,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00092",
+    "Creation Date": "2025-12-03 21:37:26",
+    "Customer": "Linh chi",
+    "Salesperson": null,
+    "Activities": null,
+    "Total": 15673900,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00091",
+    "Creation Date": "2025-12-02 22:17:26",
+    "Customer": "Nguyễn Văn Đạt",
+    "Salesperson": "Nguyên Sa",
+    "Activities": null,
+    "Total": 7590000,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00090",
+    "Creation Date": "2025-12-02 22:16:45",
+    "Customer": "Trương Văn Lộc",
+    "Salesperson": "Nguyên Sa",
+    "Activities": null,
+    "Total": 7634000,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00089",
+    "Creation Date": "2025-12-02 22:15:35",
+    "Customer": "Phan Nhật Long",
+    "Salesperson": "Nguyên Sa",
+    "Activities": null,
+    "Total": 18854000,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00088",
+    "Creation Date": "2025-12-02 20:11:57",
+    "Customer": "Hữu Huy",
+    "Salesperson": "Lương Thảo Nhi",
+    "Activities": null,
+    "Total": 581900,
+    "Status": "Sales Order"
+  },
+  {
     "Order Reference": "S00087",
-    "Creation Date": 45993.84010416667,
+    "Creation Date": "2025-12-02 20:09:45",
     "Customer": "Trần Bích Thủy",
     "Salesperson": "Yến Ngọc",
-    "Activities": "",
+    "Activities": null,
     "Total": 9460000,
     "Status": "Sales Order"
   },
   {
+    "Order Reference": "S00084",
+    "Creation Date": "2025-12-02 20:02:05",
+    "Customer": "Tuấn Anh",
+    "Salesperson": null,
+    "Activities": null,
+    "Total": 20293900,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00086",
+    "Creation Date": "2025-12-02 20:04:31",
+    "Customer": "Truc Chi",
+    "Salesperson": null,
+    "Activities": null,
+    "Total": 14465000,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00085",
+    "Creation Date": "2025-12-02 20:04:18",
+    "Customer": "Nguyễn Hữu Huân",
+    "Salesperson": null,
+    "Activities": null,
+    "Total": 21219000,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00083",
+    "Creation Date": "2025-12-01 10:52:13",
+    "Customer": "Ngọc Yến",
+    "Salesperson": "Lương Thảo Nhi",
+    "Activities": null,
+    "Total": 90145000,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00082",
+    "Creation Date": "2025-12-01 10:46:49",
+    "Customer": "Lương Thảo Nhi",
+    "Salesperson": null,
+    "Activities": null,
+    "Total": 46549800,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00081",
+    "Creation Date": "2025-12-01 10:16:39",
+    "Customer": "Võ Đức Huy",
+    "Salesperson": "Nguyên Sa",
+    "Activities": null,
+    "Total": 9018900,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00080",
+    "Creation Date": "2025-12-01 09:34:49",
+    "Customer": "Aloha",
+    "Salesperson": null,
+    "Activities": null,
+    "Total": 18700000,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00078",
+    "Creation Date": "2025-12-01 09:07:17",
+    "Customer": "Phạm Quỳnh Trang",
+    "Salesperson": "Nguyên Sa",
+    "Activities": null,
+    "Total": 13473900,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00077",
+    "Creation Date": "2025-12-01 09:06:18",
+    "Customer": "Trương Văn Lộc",
+    "Salesperson": "Nguyên Sa",
+    "Activities": null,
+    "Total": 5948800,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00076",
+    "Creation Date": "2025-12-01 08:38:00",
+    "Customer": "Hanh Nguyen",
+    "Salesperson": null,
+    "Activities": null,
+    "Total": 74115000,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00075",
+    "Creation Date": "2025-12-01 08:36:59",
+    "Customer": "Public user",
+    "Salesperson": null,
+    "Activities": null,
+    "Total": 28737500,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00074",
+    "Creation Date": "2025-12-01 08:27:55",
+    "Customer": "Thắm",
+    "Salesperson": null,
+    "Activities": null,
+    "Total": 85489000,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00073",
+    "Creation Date": "2025-12-01 08:25:28",
+    "Customer": "Phạm Thị Yến Ngọc",
+    "Salesperson": null,
+    "Activities": null,
+    "Total": 8107000,
+    "Status": "Sales Order"
+  },
+  {
     "Order Reference": "S00072",
-    "Creation Date": 45992.33909722222,
+    "Creation Date": "2025-12-01 08:08:18",
     "Customer": "Hương Giang",
     "Salesperson": "Yến Ngọc",
-    "Activities": "",
+    "Activities": null,
     "Total": 24205500,
     "Status": "Sales Order"
   },
   {
+    "Order Reference": "S00071",
+    "Creation Date": "2025-12-01 08:07:03",
+    "Customer": "Kim Giàu",
+    "Salesperson": "Lương Thảo Nhi",
+    "Activities": null,
+    "Total": 495000000,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00070",
+    "Creation Date": "2025-12-01 08:04:36",
+    "Customer": "Ngọc Giàu",
+    "Salesperson": "Lương Thảo Nhi",
+    "Activities": null,
+    "Total": 233722500,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00069",
+    "Creation Date": "2025-11-30 20:14:25",
+    "Customer": "Thanh Uyên Tran",
+    "Salesperson": "Lương Thảo Nhi",
+    "Activities": null,
+    "Total": 2145000,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00068",
+    "Creation Date": "2025-11-30 20:09:56",
+    "Customer": "Trần Anh Thơ",
+    "Salesperson": "Lương Thảo Nhi",
+    "Activities": null,
+    "Total": 21285000,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00067",
+    "Creation Date": "2025-11-30 20:08:17",
+    "Customer": "Hồng Anh Nguyễn",
+    "Salesperson": "Lương Thảo Nhi",
+    "Activities": null,
+    "Total": 5775000,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00066",
+    "Creation Date": "2025-11-30 04:12:01",
+    "Customer": "Đàm Nhi “wine”",
+    "Salesperson": "Lương Thảo Nhi",
+    "Activities": null,
+    "Total": 21593000,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00065",
+    "Creation Date": "2025-11-30 04:06:57",
+    "Customer": "Lê Huỳnh Như",
+    "Salesperson": "Lương Thảo Nhi",
+    "Activities": null,
+    "Total": 8910000,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00064",
+    "Creation Date": "2025-11-30 04:01:50",
+    "Customer": "Thuý Ngân",
+    "Salesperson": "Lương Thảo Nhi",
+    "Activities": null,
+    "Total": 9832900,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00063",
+    "Creation Date": "2025-11-30 04:00:30",
+    "Customer": "Mỹ Hạnh",
+    "Salesperson": "Lương Thảo Nhi",
+    "Activities": null,
+    "Total": 7139000,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00062",
+    "Creation Date": "2025-11-30 03:59:04",
+    "Customer": "Bích Trâm",
+    "Salesperson": "Lương Thảo Nhi",
+    "Activities": null,
+    "Total": 10041900,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00061",
+    "Creation Date": "2025-11-29 23:17:36",
+    "Customer": "Phạm Quỳnh Trang",
+    "Salesperson": "Nguyên Sa",
+    "Activities": null,
+    "Total": 17234800,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00060",
+    "Creation Date": "2025-11-29 23:14:33",
+    "Customer": "Đinh Thị Kim Yến",
+    "Salesperson": "Nguyên Sa",
+    "Activities": null,
+    "Total": 11487300,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00059",
+    "Creation Date": "2025-11-29 23:13:47",
+    "Customer": "Bùi Thanh Tùng",
+    "Salesperson": "Nguyên Sa",
+    "Activities": null,
+    "Total": 20898900,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00058",
+    "Creation Date": "2025-11-29 23:12:45",
+    "Customer": "Nguyễn Hồng Ánh",
+    "Salesperson": "Nguyên Sa",
+    "Activities": null,
+    "Total": 18639500,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00057",
+    "Creation Date": "2025-11-29 23:12:10",
+    "Customer": "Võ Đức Huy",
+    "Salesperson": "Nguyên Sa",
+    "Activities": null,
+    "Total": 14645400,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00056",
+    "Creation Date": "2025-11-29 23:11:29",
+    "Customer": "Nguyễn Trọng Khang",
+    "Salesperson": "Nguyên Sa",
+    "Activities": null,
+    "Total": 7927700,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00055",
+    "Creation Date": "2025-11-29 23:10:01",
+    "Customer": "Trương Văn Lộc",
+    "Salesperson": "Nguyên Sa",
+    "Activities": null,
+    "Total": 17388800,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00054",
+    "Creation Date": "2025-11-28 14:51:04",
+    "Customer": "Nguyễn Trọng Khang",
+    "Salesperson": "Nguyên Sa",
+    "Activities": null,
+    "Total": 15453900,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00053",
+    "Creation Date": "2025-11-28 14:49:55",
+    "Customer": "Trần Thanh Huyền",
+    "Salesperson": "Nguyên Sa",
+    "Activities": null,
+    "Total": 14331900,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00052",
+    "Creation Date": "2025-11-28 14:49:00",
+    "Customer": "Phạm Quốc Bảo",
+    "Salesperson": "Nguyên Sa",
+    "Activities": null,
+    "Total": 24087800,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00051",
+    "Creation Date": "2025-11-28 14:47:39",
+    "Customer": "Hoàng Thị Mỹ Dung",
+    "Salesperson": "Nguyên Sa",
+    "Activities": null,
+    "Total": 10516000,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00050",
+    "Creation Date": "2025-11-28 14:46:28",
+    "Customer": "Nguyễn Hồng Ánh",
+    "Salesperson": "Nguyên Sa",
+    "Activities": null,
+    "Total": 12317800,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00024",
+    "Creation Date": "2025-10-20 09:58:46",
+    "Customer": "Phạm Quốc Bảo",
+    "Salesperson": "Lương Thảo Nhi",
+    "Activities": null,
+    "Total": 10945000,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00049",
+    "Creation Date": "2025-11-27 22:03:11",
+    "Customer": "Phạm Quốc Bảo",
+    "Salesperson": "Nguyên Sa",
+    "Activities": null,
+    "Total": 19412800,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00048",
+    "Creation Date": "2025-11-27 22:01:31",
+    "Customer": "Phan Nhật Long",
+    "Salesperson": "Nguyên Sa",
+    "Activities": null,
+    "Total": 8146600,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00047",
+    "Creation Date": "2025-11-27 21:59:28",
+    "Customer": "Nguyễn Hồng Ánh",
+    "Salesperson": "Nguyên Sa",
+    "Activities": null,
+    "Total": 9491900,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00046",
+    "Creation Date": "2025-11-27 21:23:42",
+    "Customer": "Hana",
+    "Salesperson": "Lương Thảo Nhi",
+    "Activities": null,
+    "Total": 8789000,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00045",
+    "Creation Date": "2025-11-27 21:17:15",
+    "Customer": "Nina",
+    "Salesperson": "Lương Thảo Nhi",
+    "Activities": null,
+    "Total": 4950000,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00044",
+    "Creation Date": "2025-11-26 14:44:03",
+    "Customer": "Panda",
+    "Salesperson": "Lương Thảo Nhi",
+    "Activities": null,
+    "Total": 30411700,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00043",
+    "Creation Date": "2025-11-26 14:12:22",
+    "Customer": "Nguyễn Trí Thứ",
+    "Salesperson": "Lương Thảo Nhi",
+    "Activities": null,
+    "Total": 16252500,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00042",
+    "Creation Date": "2025-11-26 14:00:58",
+    "Customer": "Trần Thu",
+    "Salesperson": "Lương Thảo Nhi",
+    "Activities": null,
+    "Total": 8111400,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00041",
+    "Creation Date": "2025-11-26 13:52:26",
+    "Customer": "Lê Huỳnh Như",
+    "Salesperson": "Lương Thảo Nhi",
+    "Activities": null,
+    "Total": 9553500,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00040",
+    "Creation Date": "2025-11-26 13:49:42",
+    "Customer": "Lê Anh Tuấn",
+    "Salesperson": "Nguyên Sa",
+    "Activities": null,
+    "Total": 9688800,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00039",
+    "Creation Date": "2025-11-26 13:46:16",
+    "Customer": "Hồng Sơn",
+    "Salesperson": "Lương Thảo Nhi",
+    "Activities": null,
+    "Total": 18313900,
+    "Status": "Sales Order"
+  },
+  {
     "Order Reference": "S00038",
-    "Creation Date": 45987.57344907407,
+    "Creation Date": "2025-11-26 13:45:46",
     "Customer": "Mỹ Tâm",
     "Salesperson": "Yến Ngọc",
-    "Activities": "",
+    "Activities": null,
     "Total": 29425000,
     "Status": "Sales Order"
   },
   {
+    "Order Reference": "S00037",
+    "Creation Date": "2025-11-26 13:44:01",
+    "Customer": "Long Nhật",
+    "Salesperson": "Lương Thảo Nhi",
+    "Activities": null,
+    "Total": 43554500,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00036",
+    "Creation Date": "2025-11-26 13:40:57",
+    "Customer": "Phan Như Quỳnh",
+    "Salesperson": "Lương Thảo Nhi",
+    "Activities": null,
+    "Total": 44770000,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00035",
+    "Creation Date": "2025-11-26 13:40:55",
+    "Customer": "Bảo Ngọc Nguyễn",
+    "Salesperson": "Lương Thảo Nhi",
+    "Activities": null,
+    "Total": 5113900,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00034",
+    "Creation Date": "2025-11-24 20:07:56",
+    "Customer": "Yến Vy",
+    "Salesperson": "Lương Thảo Nhi",
+    "Activities": null,
+    "Total": 5896000,
+    "Status": "Sales Order"
+  },
+  {
     "Order Reference": "S00031",
-    "Creation Date": 45985.4409375,
+    "Creation Date": "2025-11-24 10:34:57",
     "Customer": "11, noc noc",
     "Salesperson": "Yến Ngọc",
-    "Activities": "",
+    "Activities": null,
     "Total": 19058900,
     "Status": "Sales Order"
   },
   {
+    "Order Reference": "S00025",
+    "Creation Date": "2025-10-20 10:02:11",
+    "Customer": "Võ Đức Huy",
+    "Salesperson": "Nguyên Sa",
+    "Activities": null,
+    "Total": 4257000,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00033",
+    "Creation Date": "2025-11-24 10:40:55",
+    "Customer": "Thanh My",
+    "Salesperson": "Lương Thảo Nhi",
+    "Activities": null,
+    "Total": 14674000,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00030",
+    "Creation Date": "2025-11-24 10:31:33",
+    "Customer": "Tuệ Anh",
+    "Salesperson": "Lương Thảo Nhi",
+    "Activities": null,
+    "Total": 13794000,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00029",
+    "Creation Date": "2025-11-24 10:26:49",
+    "Customer": "Lan Thảo",
+    "Salesperson": "Lương Thảo Nhi",
+    "Activities": null,
+    "Total": 9491900,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00028",
+    "Creation Date": "2025-11-03 09:23:05",
+    "Customer": "Yến Ngọc",
+    "Salesperson": "Lương Thảo Nhi",
+    "Activities": null,
+    "Total": 6600000,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00027",
+    "Creation Date": "2025-10-20 10:57:24",
+    "Customer": "Nguyễn Minh Khôi",
+    "Salesperson": "Nguyên Sa",
+    "Activities": null,
+    "Total": 5280000,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00026",
+    "Creation Date": "2025-10-20 10:02:48",
+    "Customer": "Đoàn Thảo Vân",
+    "Salesperson": "Lương Thảo Nhi",
+    "Activities": null,
+    "Total": 3080000,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00023",
+    "Creation Date": "2025-10-20 09:54:49",
+    "Customer": "Phan Nhật Long",
+    "Salesperson": "Lương Thảo Nhi",
+    "Activities": null,
+    "Total": 10558900,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00022",
+    "Creation Date": "2025-10-20 09:53:25",
+    "Customer": "Hoàng Thị Mỹ Dung",
+    "Salesperson": "Lương Thảo Nhi",
+    "Activities": null,
+    "Total": 5555000,
+    "Status": "Sales Order"
+  },
+  {
     "Order Reference": "S00021",
-    "Creation Date": 45950.41158564815,
+    "Creation Date": "2025-10-20 09:52:41",
     "Customer": "Nguyễn Văn Đạt",
     "Salesperson": "Yến Ngọc",
-    "Activities": "",
+    "Activities": null,
     "Total": 4628800,
     "Status": "Sales Order"
   },
   {
+    "Order Reference": "S00020",
+    "Creation Date": "2025-10-20 09:47:46",
+    "Customer": "Trần Thanh Huyền",
+    "Salesperson": "Lương Thảo Nhi",
+    "Activities": null,
+    "Total": 7093900,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00019",
+    "Creation Date": "2025-10-19 17:56:34",
+    "Customer": "Thảo Nguyên",
+    "Salesperson": "Lương Thảo Nhi",
+    "Activities": null,
+    "Total": 7920000,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00018",
+    "Creation Date": "2025-10-19 17:55:56",
+    "Customer": "Thảo Nguyên",
+    "Salesperson": "Lương Thảo Nhi",
+    "Activities": null,
+    "Total": 2638900,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00017",
+    "Creation Date": "2025-10-19 17:55:19",
+    "Customer": "Thảo Nguyên",
+    "Salesperson": "Lương Thảo Nhi",
+    "Activities": null,
+    "Total": 2189000,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00016",
+    "Creation Date": "2025-10-18 21:57:05",
+    "Customer": "Trần Bảo Anh",
+    "Salesperson": "Lương Thảo Nhi",
+    "Activities": null,
+    "Total": 7315000,
+    "Status": "Sales Order"
+  },
+  {
     "Order Reference": "S00014",
-    "Creation Date": 45948.91013888889,
+    "Creation Date": "2025-10-18 21:50:36",
     "Customer": "Lý Kim Ngân",
     "Salesperson": "Yến Ngọc",
-    "Activities": "",
+    "Activities": null,
     "Total": 4563900,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00013",
+    "Creation Date": "2025-10-16 09:46:48",
+    "Customer": "Nguyễn Đăng Khoa",
+    "Salesperson": "Nguyên Sa",
+    "Activities": null,
+    "Total": 2768700,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00011",
+    "Creation Date": "2025-10-15 10:09:41",
+    "Customer": "Lương Thảo Nhi",
+    "Salesperson": null,
+    "Activities": null,
+    "Total": 6600000,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00010",
+    "Creation Date": "2025-10-15 09:43:15",
+    "Customer": "Tran Minh Ngoc",
+    "Salesperson": null,
+    "Activities": null,
+    "Total": 8193900,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00009",
+    "Creation Date": "2025-10-15 09:38:17",
+    "Customer": "Nguyen Thoai Anh",
+    "Salesperson": null,
+    "Activities": null,
+    "Total": 5197800,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00008",
+    "Creation Date": "2025-10-15 09:35:18",
+    "Customer": "Thanh Trúc",
+    "Salesperson": "Lương Thảo Nhi",
+    "Activities": null,
+    "Total": 8743900,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00003",
+    "Creation Date": "2025-09-29 10:56:33",
+    "Customer": "Chiêm Đức Luân",
+    "Salesperson": "Lương Thảo Nhi",
+    "Activities": null,
+    "Total": 1815000,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00002",
+    "Creation Date": "2025-09-29 10:50:23",
+    "Customer": "Nguyễn Bảo Ngọc",
+    "Salesperson": "Lương Thảo Nhi",
+    "Activities": null,
+    "Total": 4554000,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00007",
+    "Creation Date": "2025-10-12 14:39:12",
+    "Customer": "Thanh Tuyền",
+    "Salesperson": "Lương Thảo Nhi",
+    "Activities": null,
+    "Total": 2909500,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00005",
+    "Creation Date": "2025-10-06 14:49:05",
+    "Customer": "Thanh Uyên",
+    "Salesperson": "Lương Thảo Nhi",
+    "Activities": null,
+    "Total": 4499000,
+    "Status": "Sales Order"
+  },
+  {
+    "Order Reference": "S00004",
+    "Creation Date": "2025-10-06 10:41:36",
+    "Customer": "Lương Thảo Nhi",
+    "Salesperson": null,
+    "Activities": null,
+    "Total": 15090900,
     "Status": "Sales Order"
   }
 ]

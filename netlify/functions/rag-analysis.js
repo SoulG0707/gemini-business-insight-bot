@@ -117,7 +117,7 @@ function formatSalesOrders(rows) {
 }
 
 function buildKnowledgeBase() {
-  const marketingLogs = loadJsonFile("data.json");
+  const marketingLogs = loadJsonFile("mailing.json");
   const purchaseOrders = loadJsonFile("purchase_orders.json");
   const salesOrders = loadJsonFile("sales_orders.json");
 
